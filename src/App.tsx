@@ -28,8 +28,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0d1a2d] text-white">
-
+    <div className="w-screen min-h-screen bg-[#0d1a2d] text-white">
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 sm:px-10 py-4 bg-[#0d1a2d] shadow-md">
         <h1 className="text-2xl font-bold">Mon Portfolio</h1>
@@ -77,7 +76,7 @@ function App() {
       </header>
 
       {/* HERO SECTION */}
-      <main className="flex flex-col lg:flex-row justify-around items-center px-4 sm:px-10 mt-32">
+      <main className="flex flex-col lg:flex-row justify-around items-center px-0 sm:px-4 lg:px-10 mt-32">
         <div className="max-w-full lg:max-w-xl text-center lg:text-left">
           <p className="text-3xl sm:text-4xl font-bold text-red-400">Mehdi Meriem</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mt-4">
@@ -112,22 +111,22 @@ function App() {
       </main>
 
       {/* ABOUT */}
-      <div ref={aboutRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={aboutRef} className="px-0 sm:px-4 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
         <About />
       </div>
 
       {/* SKILLS */}
-      <div ref={skillsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={skillsRef} className="px-0 sm:px-4 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
         <Skills />
       </div>
 
       {/* PROJECTS */}
-      <div ref={projectsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={projectsRef} className="px-0 sm:px-4 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
         <Projets />
       </div>
 
       {/* CONTACT */}
-      <div ref={contactRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 mb-20">
+      <div ref={contactRef} className="px-0 sm:px-4 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 mb-20">
         <Cntct />
       </div>
     </div>
