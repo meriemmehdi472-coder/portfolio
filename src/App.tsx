@@ -40,13 +40,18 @@ function App() {
 
         {/* NAVIGATION DESKTOP */}
         <nav className="hidden lg:flex gap-6 text-lg">
-          <button className="text-blue-400 font-semibold" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</button>
-          <button onClick={() => scrollToSection(aboutRef)}>About</button>
-          <button onClick={() => scrollToSection(skillsRef)}>Skills</button>
-          <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
-          <button onClick={() => scrollToSection(contactRef)}>Contact</button>
           <button
-            className="border border-gray-500 px-4 py-1 rounded hover:bg-gray-700 transition"
+            className="text-[#EBACA2] font-semibold hover:text-[#BED3C3] transition"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Home
+          </button>
+          <button className="hover:text-[#BED3C3] transition" onClick={() => scrollToSection(aboutRef)}>About</button>
+          <button className="hover:text-[#BED3C3] transition" onClick={() => scrollToSection(skillsRef)}>Skills</button>
+          <button className="hover:text-[#BED3C3] transition" onClick={() => scrollToSection(projectsRef)}>Projects</button>
+          <button className="hover:text-[#BED3C3] transition" onClick={() => scrollToSection(contactRef)}>Contact</button>
+          <button
+            className="border border-gray-500 px-4 py-1 rounded hover:text-[#BED3C3] transition"
             onClick={() => window.open(cv, "_blank")}
           >
             Cv
@@ -61,12 +66,12 @@ function App() {
 
           {menuOpen && (
             <div className="absolute right-0 mt-2 flex flex-col gap-4 bg-[#0d1a2d] p-4 rounded shadow-lg w-40">
-              <button className="text-left" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</button>
-              <button className="text-left" onClick={() => scrollToSection(aboutRef)}>About</button>
-              <button className="text-left" onClick={() => scrollToSection(skillsRef)}>Skills</button>
-              <button className="text-left" onClick={() => scrollToSection(projectsRef)}>Projects</button>
-              <button className="text-left" onClick={() => scrollToSection(contactRef)}>Contact</button>
-              <button className="text-left" onClick={() => window.open(cv, "_blank")}>Cv</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => scrollToSection(aboutRef)}>About</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => scrollToSection(skillsRef)}>Skills</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => scrollToSection(projectsRef)}>Projects</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => scrollToSection(contactRef)}>Contact</button>
+              <button className="text-left hover:text-[#BED3C3]" onClick={() => window.open(cv, "_blank")}>Cv</button>
             </div>
           )}
         </div>
@@ -79,9 +84,9 @@ function App() {
       {/* HERO SECTION */}
       <main className="flex flex-col lg:flex-row justify-around items-center px-4 sm:px-10 mt-32">
         <div className="max-w-full lg:max-w-xl text-center lg:text-left">
-          <p className="text-3xl sm:text-4xl font-bold text-red-400">Mehdi Meriem</p>
+          <p className="text-3xl sm:text-4xl font-bold" style={{ color: "#EBACA2" }}>Mehdi Meriem</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mt-4">
-            <span className="text-green-500">Développeur <br /> Full-Stack</span>
+            <span style={{ color: "#BED3C3" }}>Développeur <br /> Full-Stack</span>
           </h1>
           <p className="mt-4 text-gray-300 text-sm sm:text-base">
             Je conçois des applications web modernes et performantes de bout en bout. Grâce à mon expertise en frontend et en backend, je crée des solutions robustes, accessibles et pensées pour offrir une expérience utilisateur optimale.
@@ -89,7 +94,7 @@ function App() {
         </div>
 
         <div className="mt-8 lg:mt-0 flex flex-col items-center">
-          <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(0,255,150,0.5)] hover:scale-105 transition duration-300 border border-green-500">
+          <div className="rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(0,255,150,0.5)] hover:scale-105 transition duration-300 border" style={{ borderColor: "#BED3C3" }}>
             <img src={hero} alt="portrait" className="w-64 sm:w-72 md:w-80 lg:w-[330px] h-auto object-cover" />
           </div>
 
@@ -112,26 +117,30 @@ function App() {
       </main>
 
       {/* ABOUT */}
-      <div ref={aboutRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={aboutRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 flex flex-col items-center text-center">
         <About />
       </div>
 
       {/* SKILLS */}
-      <div ref={skillsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={skillsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 flex flex-col items-center text-center">
         <Skills />
       </div>
 
       {/* PROJECTS */}
-      <div ref={projectsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40">
+      <div ref={projectsRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 flex flex-col items-center text-center">
         <Projets />
       </div>
 
       {/* CONTACT */}
-      <div ref={contactRef} className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 mb-20">
-        <Cntct />
+      <div
+        ref={contactRef}
+        className="px-4 sm:px-6 lg:px-10 mt-20 sm:mt-32 lg:mt-40 scroll-mt-40 mb-20 flex flex-col items-center text-center"
+      >
+        <div className="p-8 mt-10 max-w-2xl w-full mx-auto bg-white/10 backdrop-blur-lg border border-gray-700 rounded-2xl shadow-xl text-white">
+          <Cntct />
+        </div>
       </div>
-    </div>
-  );
+    </div>);
 }
 
 export default App;
