@@ -1,7 +1,7 @@
 export default function Skills() {
   const frontend = [
-    { name: "HTML", level: "Expert" },
-    { name: "CSS", level: "Expert" },
+    { name: "HTML", level: "Advanced" },
+    { name: "CSS", level: "Advanced" },
     { name: "JavaScript", level: "Advanced" },
     { name: "TypeScript", level: "Advanced" },
     { name: "React", level: "Advanced" },
@@ -9,8 +9,8 @@ export default function Skills() {
   ];
 
   const backend = [
-    { name: "Node.js", level: "Intermediate" },
-    { name: "Express", level: "Intermediate" },
+    { name: "Node.js", level: "Advanced" },
+    { name: "Express", level: "Advanced" },
     { name: "Java", level: "Advanced" },
     { name: "Python", level: "Beginner" },
     { name: "Django", level: "Beginner" },
@@ -18,8 +18,8 @@ export default function Skills() {
   ];
 
   const database = [
-    { name: "PostgreSQL", level: "Intermediate" },
-    { name: "SQL", level: "Intermediate" },
+    { name: "PostgreSQL", level: "Advanced" },
+    { name: "SQL", level: "Advanced" },
   ];
 
   const systems = [
