@@ -51,9 +51,9 @@ export default function Skills() {
 
   return (
     <div className="px-10 py-10">
-      <h2 className="text-3xl font-bold mb-10 text-[#BED3C3] text-center">
+      <i className="text-3xl font-bold mb-10 text-[#BED3C3] text-center">
         Compétences
-      </h2>
+      </i>
 
       {/* Grille responsive */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
