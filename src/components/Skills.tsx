@@ -6,6 +6,9 @@ export default function Skills() {
     { name: "TypeScript", level: "Advanced" },
     { name: "React", level: "Advanced" },
     { name: "Next.js", level: "Advanced" },
+    { name: "Tailwind CSS", level: "Advanced" },
+    
+
   ];
 
   const backend = [
@@ -13,7 +16,6 @@ export default function Skills() {
     { name: "Express", level: "Advanced" },
     { name: "Java", level: "Advanced" },
     { name: "Python", level: "Beginner" },
-    { name: "Django", level: "Beginner" },
     { name: "C", level: "Expert" },
   ];
 
@@ -27,18 +29,28 @@ export default function Skills() {
     { name: "Administration système", level: "Advanced" },
     { name: "SSH / clés / connexions distantes", level: "Advanced" },
     { name: "Sockets (Client ↔ Serveur en C)", level: "Advanced" },
+    { name: "Réseaux (Modèle OSI, TCP/IP, UDP...)", level: "Advanced" },
+    { name: "Virtualisation (VirtualBox, Docker)", level: "Advanced" },
+    { name: "Scripts Bash", level: "Advanced" },
+    { name: "Nginx", level: "Advanced" },
   ];
 
   const algorithms = [
     { name: "Optimisation", level: "Advanced" },
     { name: "Complexité", level: "Advanced" },
+    { name: "Structures de données", level: "Advanced" },
+    { name: "Tri", level: "Advanced" },
+    { name: "Recherche", level: "Advanced" },
+    
   ];
 
   const tools = [
     { name: "Git", level: "Advanced" },
     { name: "GitHub", level: "Advanced" },
     { name: "CORS", level: "Advanced" },
-  ];
+    { name: "Postman", level: "Advanced" },
+    { name: "Visual Studio Code", level: "Advanced" },
+  ]
 
   const categories = [
     { name: "Frontend", skills: frontend },
