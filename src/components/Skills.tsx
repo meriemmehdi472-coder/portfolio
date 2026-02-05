@@ -26,21 +26,21 @@ export default function Skills() {
 
   const systems = [
     { name: "Unix / Linux / Debian", level: "Expert" },
-    { name: "Administration système", level: "Advanced" },
-    { name: "SSH / clés / connexions distantes", level: "Advanced" },
-    { name: "Sockets (Client ↔ Serveur en C)", level: "Advanced" },
+    // { name: "Administration système", level: "Advanced" },
+    // { name: "SSH / clés / connexions distantes", level: "Advanced" },
+    // { name: "Sockets (Client ↔ Serveur en C)", level: "Advanced" },
     { name: "Réseaux (Modèle OSI, TCP/IP, UDP...)", level: "Advanced" },
     { name: "Virtualisation (VirtualBox, Docker)", level: "Advanced" },
     { name: "Scripts Bash", level: "Advanced" },
-    { name: "Nginx", level: "Advanced" },
+    // { name: "Nginx", level: "Advanced" },
   ];
 
   const algorithms = [
     { name: "Optimisation", level: "Advanced" },
     { name: "Complexité", level: "Advanced" },
-    { name: "Structures de données", level: "Advanced" },
-    { name: "Tri", level: "Advanced" },
-    { name: "Recherche", level: "Advanced" },
+    // { name: "Structures de données", level: "Advanced" },
+    // { name: "Tri", level: "Advanced" },
+    // { name: "Recherche", level: "Advanced" },
     
   ];
 
