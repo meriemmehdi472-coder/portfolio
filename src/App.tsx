@@ -20,7 +20,7 @@ function App() {
   const contactRef = useRef<HTMLDivElement | null>(null);
 
   const linkedin = "https://www.linkedin.com/in/meriem-mhd/";
-  const git = "https://github.com/meriemmhd";
+  const git = "https://github.com/meriemmehdi472-coder/";
 
   const scrollToSection = (ref: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
