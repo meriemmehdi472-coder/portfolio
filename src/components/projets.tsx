@@ -1,5 +1,7 @@
 import AdactionVideo from "../assets/Adaction.mp4";
 import logismVideo from "../assets/logism.mp4";
+import Adackeckevent from  "../assets/Adacheckevent.mp4";
+import Adamarket from "../assets/Adamarket.mp4"
 
 export default function Projets({ }: {}) {
   const work = [
@@ -9,12 +11,27 @@ export default function Projets({ }: {}) {
         "AdAction est une plateforme web qui aide les associations à organiser leurs collectes de déchets.",
       video: AdactionVideo,
       link: "https://github.com/adatechschool/frida-adaction-samirmeriemjosephine",
+      Demo :"https://adaction-one.vercel.app/",
     },
     {
       Nom: "Logism",
-      Description: "Logisim est un simulateur de circuits logiques. Il est écrit en Java",
+      Description: "Logisim est un simulateur de circuits logiques;",
       video: logismVideo,
       link: "https://gitlab.sorbonne-paris-nord.fr/ndy_code/archsimul_aknymd.git"
+    },
+    {
+      Nom :"Adacheckevent",
+      Description :"application permettant d’afficher les événements publics de Paris grâce à l’API officielle",
+      Video : Adackeckevent,
+      link : "https://github.com/meriemmehdi472-coder/AdaCheckevent",
+      Demo :"https://adacheckevent-one.vercel.app/"
+    },
+    {
+      Nom :"Adamarket",
+      Description :"Market place (E-commerce)",
+      Video : Adamarket,
+      link : "https://github.com/meriemmehdi472-coder/Market",
+      Demo: "https://frida-marketplace-8dm3.vercel.app/",
     }
   ];
 
@@ -47,7 +64,7 @@ export default function Projets({ }: {}) {
                 Votre navigateur ne supporte pas la lecture vidéo.
               </video>
             </div>
-
+            <div className="flex gap-4">
             <a
               href={item.link}
               target="_blank"
@@ -56,6 +73,15 @@ export default function Projets({ }: {}) {
             >
               Voir le projet
             </a>
+            <a
+              href={item.Demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center bg-[#BED3C3] text-[#0d1a2d] font-semibold py-2 rounded-lg shadow-md hover:bg-[#a5c8b5] hover:shadow-[#BED3C3]/40 transition-all duration-300"
+            >
+              Voir la demo
+            </a>
+            </div>
           </div>
         ))}
       </div>
