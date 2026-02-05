@@ -22,14 +22,14 @@ export default function Projets({ }: {}) {
     {
       Nom :"Adacheckevent",
       Description :"application permettant d’afficher les événements publics de Paris grâce à l’API officielle",
-      Video : Adackeckevent,
+      video : Adackeckevent,
       link : "https://github.com/meriemmehdi472-coder/AdaCheckevent",
       Demo :"https://adacheckevent-one.vercel.app/"
     },
     {
       Nom :"Adamarket",
       Description :"Market place (E-commerce)",
-      Video : Adamarket,
+      video : Adamarket,
       link : "https://github.com/meriemmehdi472-coder/Market",
       Demo: "https://frida-marketplace-8dm3.vercel.app/",
     }
